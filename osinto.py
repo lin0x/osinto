@@ -1,4 +1,4 @@
-import modules
+from modules import find_email
 import argparse
 
 parser = argparse.ArgumentParser()
@@ -9,5 +9,5 @@ args = parser.parse_args()
 
 if args.email:
     email_addr = args.email
-    getData(email_addr)
+    find_email.getData(email_addr)
     exit()

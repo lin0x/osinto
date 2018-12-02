@@ -1,8 +1,7 @@
-from fullcontact import fullcontact
-from .configuration import *
-import json
+from fullcontact import FullContact
+from .configuration import full_contact_api_key
 
-fcontact = FullContact(fullcontact_api_key)
+fcontact = FullContact(full_contact_api_key)
 
 
 def getData(email_address):
